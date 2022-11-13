@@ -10,7 +10,7 @@
         <h1>Todo List</h1>
         <div id="addtask" >
          <p style="margin: 2px;">Add task</p>
-         <button id="addTaskBtn"><img  src="Add-Button-PNG.png" width="50px" height="50px" /></button>
+         <button id="addTaskBtn" onclick="toggleModal(true)"><img id="addBtn" src="Add-Button-PNG.png" width="50px" height="50px" /></button>
         </div>
       </div>
 
@@ -21,7 +21,7 @@
     <div class="modal">
       <div class="modal-header">
         <h3>Add New Task</h3>
-        <button id="close"><span>&times;</span></button>
+        <button id="close" onclick="toggleModal(false)"><span>&times;</span></button>
       </div>  
       
       <div class="modal-body">
@@ -36,8 +36,8 @@
       </div>
     
     <div class="modal-footer">
-        <button type="button" id="closeBtn">Close</button>
-        <button type="submit" id="add">Add</button>
+        <button type="button" id="closeBtn" onclick="toggleModal(false)">Close</button>
+        <button type="submit" id="add" onclick="toggleModal(false)">Add</button>
     </div>
     </div>
    </form>

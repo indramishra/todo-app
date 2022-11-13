@@ -45,7 +45,7 @@ h1, h2{
 
 }
 
-img {
+#addBtn {
     padding: 0px 0px !important;
     max-width: 100%;
     display: block !important;
@@ -57,7 +57,7 @@ img {
     width: 40px;
 }
 
-#addTaskBtn {
+#addTaskBtn  {
     padding: 0 !important;
     border: 0 !important;
     border-radius: 8px;
@@ -131,4 +131,28 @@ body {
     padding: 5px;
     display: grid;
     gap: 4px;
+}
+
+#taskBtn {
+    padding: 0px 0px !important;
+    border: 0 !important;
+    align-items: center;
+    margin-left: 50px;
+    justify-content:space-evenly;
+}
+
+#editBtn {
+    padding: 0 !important;
+    border: 0 !important;
+    background-color: #e2eede;
+    cursor: pointer;
+    width: 30px; 
+}
+
+#deleteBtn {
+    padding: 0px !important;
+    border: 0 !important;
+    background-color: #e2eede;
+    cursor: pointer;
+    width: 30px;
 }

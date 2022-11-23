@@ -49,10 +49,11 @@ deleteTask = (e) => {
 editTask = (e) => {
     let selectedTask = e.parentElement.parentElement;
     console.log("selected task::::", selectedTask);
-   let tv = task.value = selectedTask.children[0].innerHTML;
+    task.value = selectedTask.children[0].innerHTML;
     taskDate.value = selectedTask.children[1].innerHTML;
     description.value = selectedTask.children[2].innerHTML;
-     deleteTask(e);
+
+  deleteTask(e);
 }
 
 (() => {
